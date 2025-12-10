@@ -1,0 +1,10 @@
+shiny
+dplyr
+ggplot2
+plotly
+scales
+rmarkdown
+tibble
+purrr
+tidyr
+shinythemes

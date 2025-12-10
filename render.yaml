@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: shiny-app
+    env: R
+    buildCommand: R -e "pkgs <- scan('requirements.txt', what='character'); install.packages(pkgs)"
+    startCommand: R -e "shiny::runApp(port=8080, host='0.0.0.0')"
+    plan: free
+    autoDeploy: true
